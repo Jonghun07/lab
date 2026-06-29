@@ -121,7 +121,7 @@
   .method{padding:11px 18px;border-radius:10px;background:var(--panel);border:1px solid var(--line2);font-size:14.5px;font-weight:500}
 
   /* PUBLICATIONS */
-  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px}
+  .stats{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:38px}
   .stat{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:16px;padding:26px 20px;text-align:center}
   .stat .n{font-size:38px;font-weight:900;background:linear-gradient(120deg,#c4b5fd,#e879f9);-webkit-background-clip:text;background-clip:text;color:transparent;
     display:inline-block;will-change:transform,opacity;animation:floatNum 3.6s ease-in-out infinite}
@@ -129,6 +129,7 @@
   .stat:nth-child(2) .n{animation-delay:.9s}
   .stat:nth-child(3) .n{animation-delay:1.8s}
   .stat:nth-child(4) .n{animation-delay:2.7s}
+  .stat:nth-child(5) .n{animation-delay:3.6s}
   @keyframes floatNum{0%,100%{transform:translateY(0) scale(1);opacity:.92}50%{transform:translateY(-6px) scale(1.04);opacity:1}}
   @media(prefers-reduced-motion:reduce){.stat .n{animation:none}}
   .stat .lbl{font-size:13px;color:var(--muted);margin-top:6px;letter-spacing:.02em}
@@ -159,6 +160,15 @@
   .prof-bio h3{font-size:15px;font-weight:700;color:var(--acc3);margin:24px 0 12px;letter-spacing:.03em}
   .roles{display:flex;flex-direction:column;gap:9px}
   .role{font-size:14.5px;color:var(--muted);padding-left:16px;position:relative}
+  .awards{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:4px}
+  .awards th,.awards td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  .awards thead th{color:var(--acc3);font-weight:700;font-size:12px;letter-spacing:.05em;text-transform:uppercase;border-bottom:1px solid var(--line2)}
+  .awards td.yr{color:var(--acc2);font-weight:600;white-space:nowrap}
+  .awards td.aw{color:var(--txt)}
+  .awards td.by{color:var(--muted);white-space:nowrap}
+  .awards tbody tr:hover{background:rgba(139,92,246,.06)}
+  .awards-note{font-size:12.5px;color:var(--muted2);margin-top:10px}
+  @media(max-width:760px){.awards td.by{white-space:normal}}
   .role::before{content:"▸";position:absolute;left:0;color:var(--acc)}
 
   /* FOOTER */
@@ -451,13 +461,14 @@
   <div class="wrap">
     <span class="eyebrow">Publications &amp; Output</span>
     <h2 class="title">Research Output</h2>
-    <p class="lead">A sustained record of 71 journal articles, 120 conference papers, and 53 patents &amp; software registrations across building energy, indoor environment, and AI-driven control.</p>
+    <p class="lead">A sustained record of 71 journal articles, 120 conference papers, 65 patents and software registrations, 20 technology transfers, and 39 other publications across the fields of building energy, indoor environmental quality, and building controls.</p>
 
     <div class="stats">
-      <div class="stat"><div class="n">46</div><div class="lbl">Int'l Journals (SCI/SCIE)</div></div>
-      <div class="stat"><div class="n">25</div><div class="lbl">Domestic Journals</div></div>
+      <div class="stat"><div class="n">71</div><div class="lbl">Journal Articles</div></div>
       <div class="stat"><div class="n">120</div><div class="lbl">Conference Papers</div></div>
-      <div class="stat"><div class="n">65</div><div class="lbl">Patents</div></div>
+      <div class="stat"><div class="n">65</div><div class="lbl">Patents & Software</div></div>
+      <div class="stat"><div class="n">20</div><div class="lbl">Technology Transfer</div></div>
+      <div class="stat"><div class="n">39</div><div class="lbl">Other Publications</div></div>
     </div>
 
     <h3 style="margin:48px 0 6px;font-size:18px;font-weight:650">Selected Recent Publications</h3>
@@ -487,7 +498,7 @@
         <div class="pm">Jung, D., Shin, D., Seo, J., Lee, K., Kim, J. &middot; <em>Building and Environment</em>, 2024.</div>
       </div>
     </div>
-    <p style="margin-top:22px;color:var(--muted2);font-size:14px">A complete list of 191 publications, 37 patents, 16 software programs, and 20 technology transfers is available in the full CV.</p>
+    <p style="margin-top:22px;color:var(--muted2);font-size:14px">A complete list of 191 publications, 49 patents, 16 software programs, and 20 technology transfers is available in the full CV.</p>
   </div>
 </section>
 
@@ -530,6 +541,7 @@
         <p>Dr. Jonghun Kim is the founding director of the Building Cognition Lab and serves as Head of the Building Energy Group at the Korea Institute of Energy Research (KIER) and Professor of Energy Engineering at the University of Science &amp; Technology (UST).</p>
         <p>He received his Ph.D. in Architectural Environment Engineering (energy &amp; indoor air quality) from the University of Tokyo in 2011.</p>
         <p>His research bridges building physics, indoor environmental quality, and artificial intelligence &mdash; advancing digital twins, building knowledge graphs, and physics-informed AI toward fully autonomous buildings. He holds international credentials including Certified Passive House Designer and Certified Measurement &amp; Verification Professional.</p>
+        <p>In recognition of his contributions to the nation's building energy and carbon-neutrality agenda, he has been honored with four Ministerial Commendations <span class="medal">🎖️</span> from the Korean government &mdash; awarded by the Ministers of Land, Infrastructure and Transport, Science and ICT, and Trade, Industry and Energy &mdash; among numerous other national and academic awards.</p>
         <h3>SELECTED ROLES &amp; SERVICE</h3>
         <div class="roles">
           <div class="role">Building Expert, Presidential Commission on Climate Crisis Response (2025&ndash;)</div>
@@ -557,6 +569,42 @@
           <div class="role">Ph.D. Graduates (3): S.J.(2026), J.D.(2025), K.S.(2019)</div>
           <div class="role">M.S. Graduates (2): O.S.(2019), N.H.(2019)</div>
           </div>
+
+        <h3>SELECTED AWARDS &amp; HONORS</h3>
+        <table class="awards">
+          <thead>
+            <tr><th>Date</th><th>Award</th><th>Conferred by</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="yr">2025.06.20</td><td class="aw">Best Presentation Paper Award, Summer Annual Conference</td><td class="by">SAREK</td></tr>
+            <tr><td class="yr">2025.06.19</td><td class="aw">Best Paper Award, Summer Annual Conference</td><td class="by">SAREK</td></tr>
+            <tr><td class="yr">2023.12.31</td><td class="aw">Commendation (President of KIER)</td><td class="by">KIER</td></tr>
+            <tr><td class="yr">2023.12.20</td><td class="aw">Commendation (Minister of Land, Infrastructure and Transport) <span class="medal">🎖️</span></td><td class="by">MOLIT</td></tr>
+            <tr><td class="yr">2023.12.13</td><td class="aw">President's Award (President of KIER)</td><td class="by">KIER</td></tr>
+            <tr><td class="yr">2023.09.07</td><td class="aw">Commendation (President of KIER)</td><td class="by">KIER</td></tr>
+            <tr><td class="yr">2022.12.31</td><td class="aw">Commendation (President of KIER)</td><td class="by">KIER</td></tr>
+            <tr><td class="yr">2022.12.16</td><td class="aw">Commendation (President of KIER)</td><td class="by">KIER</td></tr>
+            <tr><td class="yr">2022.09.07</td><td class="aw">Commendation (President of KIER)</td><td class="by">KIER</td></tr>
+            <tr><td class="yr">2022.02.15</td><td class="aw">Commendation (Minister of Science and ICT) <span class="medal">🎖️</span></td><td class="by">MSIT</td></tr>
+            <tr><td class="yr">2021.12.31</td><td class="aw">Commendation (President of KIER)</td><td class="by">KIER</td></tr>
+            <tr><td class="yr">2020.12.31</td><td class="aw">Commendation (President of KIER)</td><td class="by">KIER</td></tr>
+            <tr><td class="yr">2020.12.22</td><td class="aw">Commendation (Minister of Trade, Industry and Energy) <span class="medal">🎖️</span></td><td class="by">MOTIE</td></tr>
+            <tr><td class="yr">2019.12.31</td><td class="aw">Commendation (President of KIER)</td><td class="by">KIER</td></tr>
+            <tr><td class="yr">2019.12.31</td><td class="aw">Commendation (Minister of Land, Infrastructure and Transport) <span class="medal">🎖️</span></td><td class="by">MOLIT</td></tr>
+            <tr><td class="yr">2019.04.05</td><td class="aw">Best Presentation Paper Award, Spring Annual Conference</td><td class="by">KSES</td></tr>
+            <tr><td class="yr">2019.03.14</td><td class="aw">Commendation (Mayor of Seoul)</td><td class="by">Seoul Metropolitan Gov.</td></tr>
+            <tr><td class="yr">2018.12.31</td><td class="aw">Commendation (President of KIER)</td><td class="by">KIER</td></tr>
+            <tr><td class="yr">2018.11.15</td><td class="aw">Best Presentation Paper Award, Autumn Annual Conference</td><td class="by">KSES</td></tr>
+            <tr><td class="yr">2018.04.06</td><td class="aw">Best Presentation Paper Award, Spring Annual Conference</td><td class="by">KSES</td></tr>
+            <tr><td class="yr">2016.10.13</td><td class="aw">Best Paper Award, Autumn Annual Conference</td><td class="by">KSE</td></tr>
+            <tr><td class="yr">2016.03.18</td><td class="aw">Best Paper Award, Spring Annual Conference</td><td class="by">KSES</td></tr>
+            <tr><td class="yr">2015.12.31</td><td class="aw">Commendation (President of KIER)</td><td class="by">KIER</td></tr>
+            <tr><td class="yr">2015.09.04</td><td class="aw">Commendation (President of KIER)</td><td class="by">KIER</td></tr>
+            <tr><td class="yr">2015.06.26</td><td class="aw">Best Presentation Paper Award, Summer Annual Conference</td><td class="by">SAREK</td></tr>
+            <tr><td class="yr">2014.10.24</td><td class="aw">Best Presentation Paper Award, Autumn Annual Conference</td><td class="by">AIK</td></tr>
+          </tbody>
+        </table>
+        <div class="awards-note">All awards conferred in the Republic of Korea. SAREK: Society of Air-conditioning and Refrigerating Engineers of Korea · KSES: Korean Solar Energy Society · KSE: Korean Society for Energy · AIK: Architectural Institute of Korea · KIER: Korea Institute of Energy Research · MOLIT / MSIT / MOTIE: respective government ministries.</div>
       </div>
     </div>
   </div>
