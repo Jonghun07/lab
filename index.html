@@ -168,6 +168,9 @@
   .awards td.by{color:var(--muted);white-space:nowrap}
   .awards tbody tr:hover{background:rgba(139,92,246,.06)}
   .awards-note{font-size:12.5px;color:var(--muted2);margin-top:10px}
+  .medal.shine{display:inline-block;filter:drop-shadow(0 0 4px rgba(255,210,90,.9));animation:shine 2.2s ease-in-out infinite}
+  @keyframes shine{0%,100%{filter:drop-shadow(0 0 3px rgba(255,200,70,.55));transform:scale(1)}50%{filter:drop-shadow(0 0 9px rgba(255,225,120,1));transform:scale(1.18)}}
+  @media(prefers-reduced-motion:reduce){.medal.shine{animation:none}}
   @media(max-width:760px){.awards td.by{white-space:normal}}
   .role::before{content:"▸";position:absolute;left:0;color:var(--acc)}
 
@@ -539,9 +542,9 @@
       </div>
       <div class="prof-bio">
         <p>Dr. Jonghun Kim is the founding director of the Building Cognition Lab and serves as Head of the Building Energy Group at the Korea Institute of Energy Research (KIER) and Professor of Energy Engineering at the University of Science &amp; Technology (UST).</p>
-        <p>He received his Ph.D. in Architectural Environment Engineering (energy &amp; indoor air quality) from the University of Tokyo in 2011.</p>
+        <p>As a <strong style="color:var(--acc3)">Japanese Government (MEXT) Scholarship student</strong>, he studied at the University of Tokyo, where he received his Ph.D. in Architectural Environment Engineering (energy &amp; indoor air quality) in 2011.</p>
         <p>His research bridges building physics, indoor environmental quality, and artificial intelligence &mdash; advancing digital twins, building knowledge graphs, and physics-informed AI toward fully autonomous buildings. He holds international credentials including Certified Passive House Designer and Certified Measurement &amp; Verification Professional.</p>
-        <p>In recognition of his contributions to the nation's building energy and carbon-neutrality agenda, he has been honored with four Ministerial Commendations <span class="medal">🎖️</span> from the Korean government &mdash; awarded by the Ministers of Land, Infrastructure and Transport, Science and ICT, and Trade, Industry and Energy &mdash; among numerous other national and academic awards.</p>
+        <p>In recognition of his contributions to the nation's building energy and carbon-neutrality agenda, he has been honored with <strong style="color:var(--acc3)">four Ministerial Commendations</strong> from the Korean government &mdash; awarded by the Ministers of Land, Infrastructure and Transport, Science and ICT, and Trade, Industry and Energy &mdash; among numerous other national and academic awards.</p>
         <h3>SELECTED ROLES &amp; SERVICE</h3>
         <div class="roles">
           <div class="role">Building Expert, Presidential Commission on Climate Crisis Response (2025&ndash;)</div>
@@ -602,9 +605,11 @@
             <tr><td class="yr">2015.09.04</td><td class="aw">Commendation (President of KIER)</td><td class="by">KIER</td></tr>
             <tr><td class="yr">2015.06.26</td><td class="aw">Best Presentation Paper Award, Summer Annual Conference</td><td class="by">SAREK</td></tr>
             <tr><td class="yr">2014.10.24</td><td class="aw">Best Presentation Paper Award, Autumn Annual Conference</td><td class="by">AIK</td></tr>
+            <tr><td class="yr">2009.05.27</td><td class="aw">Best Poster Award, ROOMVENT 2009 (International Conference)</td><td class="by">ROOMVENT (Int'l)</td></tr>
+            <tr><td class="yr">2008.02.19</td><td class="aw">Japanese Government (MEXT) Scholarship &mdash; selected as research student, The University of Tokyo <span class="medal shine">🌟</span></td><td class="by">MEXT, Japan</td></tr>
           </tbody>
         </table>
-        <div class="awards-note">All awards conferred in the Republic of Korea. SAREK: Society of Air-conditioning and Refrigerating Engineers of Korea · KSES: Korean Solar Energy Society · KSE: Korean Society for Energy · AIK: Architectural Institute of Korea · KIER: Korea Institute of Energy Research · MOLIT / MSIT / MOTIE: respective government ministries.</div>
+        <div class="awards-note">Conferred in the Republic of Korea unless otherwise noted &mdash; ROOMVENT 2009 (international conference) and the MEXT Scholarship (Government of Japan). SAREK: Society of Air-conditioning and Refrigerating Engineers of Korea · KSES: Korean Solar Energy Society · KSE: Korean Society for Energy · AIK: Architectural Institute of Korea · KIER: Korea Institute of Energy Research · MEXT: Japan Ministry of Education, Culture, Sports, Science and Technology · MOLIT / MSIT / MOTIE: respective Korean government ministries.</div>
       </div>
     </div>
   </div>
